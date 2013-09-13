@@ -10,8 +10,8 @@
 using namespace std;
 
 //Se definen los archivos en los que se encuentran los eventos del teclado y del mouse
-#define KEYFILE "/dev/input/by-path/platform-i8042-serio-0-event-kbd"
-#define MOUSEFILE "/dev/input/mice" //alternativa: /dev/input/mouse0
+#define KEYFILE "/dev/input/event3"
+#define MOUSEFILE "/dev/input/event5"
 
 //Funcion del primer thread que detecta los eventos del mouse
 void* detectarMouse(void*) {
